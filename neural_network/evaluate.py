@@ -5,7 +5,7 @@ from torch.utils import data
 from torch.autograd import Variable
 import json
 
-import nets
+import neural_network.nets as nets
 import numpy as np
 
 

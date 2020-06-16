@@ -1,9 +1,4 @@
 # Imports
-import evaluate as evaluate
-import util as util
-import train as train
-from helpers.processing import *
-from helpers.analysis import *
 from imblearn.over_sampling import RandomOverSampler
 import pandas as pd
 import scipy as sc
@@ -12,6 +7,13 @@ import time
 import gc
 import os
 import sys
+
+import neural_network.evaluate as evaluate
+import neural_network.util as util
+import neural_network.train as train
+from helpers.processing import *
+from helpers.analysis import *
+
 sys.path.insert(0, '..')
 
 

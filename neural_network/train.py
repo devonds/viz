@@ -3,13 +3,14 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils import data
 from torch.autograd import Variable
-
 import numpy as np
-import nets
-import evaluate
-import util
 import gc
 import time
+
+import neural_network.nets as nets
+import neural_network.evaluate as evaluate
+import neural_network.util as util
+
 
 # all inputs are numpy arrays
 # X_train/X_test is a float64 2D array
