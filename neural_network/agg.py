@@ -8,9 +8,9 @@ import gc
 import os
 import sys
 
-import neural_network.evaluate as evaluate
-import neural_network.util as util
-import neural_network.train as train
+import evaluate as evaluate
+import util as util
+import train as train
 from helpers.processing import *
 from helpers.analysis import *
 

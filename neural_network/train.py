@@ -7,9 +7,9 @@ import numpy as np
 import gc
 import time
 
-import neural_network.nets as nets
-import neural_network.evaluate as evaluate
-import neural_network.util as util
+import nets as nets
+import evaluate as evaluate
+import util as util
 
 
 # all inputs are numpy arrays
