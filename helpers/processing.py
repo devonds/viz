@@ -5,7 +5,8 @@ import numpy as np
 import pandas as pd
 from scipy.stats.mstats import winsorize
 
-from sklearn.preprocessing import Imputer, StandardScaler, MinMaxScaler, RobustScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
+from sklearn.impute import SimpleImputer
 
 
 def get_feature_set_names_by_type(

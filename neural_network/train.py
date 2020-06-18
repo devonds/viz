@@ -11,7 +11,6 @@ import neural_network.nets as nets
 import neural_network.evaluate as evaluate
 import neural_network.util as util
 
-
 # all inputs are numpy arrays
 # X_train/X_test is a float64 2D array
 # y_train/y_test is a int64 1D array with value equal to classification type
