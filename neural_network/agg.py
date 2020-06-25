@@ -1,5 +1,4 @@
 # Imports
-from imblearn.over_sampling import RandomOverSampler
 import pandas as pd
 import scipy as sc
 import numpy as np
@@ -7,6 +6,7 @@ import time
 import gc
 import os
 import sys
+from imblearn.over_sampling import RandomOverSampler
 
 import evaluate as evaluate
 import util as util
