@@ -8,6 +8,9 @@ import numpy as np
 
 import neural_network.nets as nets
 
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
 
 def evaluate(model_suffix, dataloader, parameters,
              models_directory='./models/'):
@@ -17,8 +20,8 @@ def evaluate(model_suffix, dataloader, parameters,
     output_dim = parameters.get('output_dim')
     model_prefix = parameters.get('model_prefix', None)
 
-    criterion = nn.CrossEntropyLoss().cuda()
-    net = nets.AdvancedNet(input_dim, hidden_sizes, output_dim).cuda()
+    criterion = nn.CrossEntropyLoss().to(device)
+    net = nets.AdvancedNet(input_dim, hidden_sizes, output_dim).to(device)
     net.load_state_dict(
         torch.load(
             models_directory +
@@ -36,7 +39,7 @@ def eval_error(net, loader, criterion=None):
     accuracy = 0.0
     net.eval()
     for inputs, labels in loader:
-        inputs, labels = inputs.cuda(), labels.cuda()
+        inputs, labels = inputs.to(device), labels.to(device)
         outputs = net(inputs)
         if criterion is not None:
             total_loss += criterion(outputs, labels).item()
@@ -57,9 +60,9 @@ def print_predictions(X, fids, parameters, mapping,
     output_dim = parameters.get('output_dim', -1)
     model_prefix = parameters.get('model_prefix', None)
 
-    net = nets.AdvancedNet(X.shape[1], hidden_sizes, output_dim).cuda()
+    net = nets.AdvancedNet(X.shape[1], hidden_sizes, output_dim).to(device)
     net.load_state_dict(torch.load(models_directory + model_prefix))
-    X = Variable(torch.from_numpy(X).float()).cuda()
+    X = Variable(torch.from_numpy(X).float()).to(device)
     net.eval()
     y = net(X)
     max_index = y.max(dim=1)[1]

@@ -1,0 +1,60 @@
+
+
+Starting at 2020-06-30 16:19:09
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=2, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 16:53:07
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=2, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 21:28:59
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=2, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 21:34:07
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=2, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:00:04
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:06:07
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:15:03
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:16:32
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:49:44
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 22:53:43
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 23:00:14
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+
+
+
+Starting at 2020-06-30 23:02:14
+batch_size=200, dropout=0.0, hidden_sizes=[800, 800, 800], input_dim=846, learning_rate=0.0005, model_prefix='agg', num_epochs=100, output_dim=7, patience=20, print_test=True, save_model=False, test_best=False, threshold=0.001, weight_decay=0
+

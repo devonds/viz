@@ -34,14 +34,14 @@ def load_datasets(X_train, y_train, X_val, y_val,
     # datasets
     # convert np matrices into torch Variables, and then feed them into a
     # dataloader
-    # photon note: changed to cast X as float64 
+    # photon note: changed to cast X as float64
     X_train, y_train = torch.from_numpy(
         X_train.astype(np.float64, copy=False)), torch.from_numpy(y_train.astype(np.float64))
     X_val, y_val = torch.from_numpy(X_val.astype(np.float64, copy=False)), torch.from_numpy(y_val)
     train_dataset = torch.utils.data.TensorDataset(X_train, y_train)
     val_dataset = torch.utils.data.TensorDataset(X_val, y_val)
     train_dataloader = torch.utils.data.DataLoader(
-        train_dataset, shuffle=True, batch_size=batch_size, num_workers=0).
+        train_dataset, shuffle=True, batch_size=batch_size, num_workers=0)
     val_dataloader = torch.utils.data.DataLoader(
         val_dataset, shuffle=True, batch_size=batch_size, num_workers=0)
     test_dataloader = None
@@ -65,7 +65,7 @@ def train(train_dataloader, val_dataloader, test_dataloader,
                      for k, v in sorted(parameters.items())]))
     # set divice (cpu, gpu) depending on what's available
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    print("device is ", device)	
+    print("device is ", device)
     # batch_size is determined in the dataloader, so the variable is
     # irrelevant here
     batch_size = parameters.get('batch_size', 200)
@@ -134,7 +134,7 @@ def train(train_dataloader, val_dataloader, test_dataloader,
         for batch_num, (inputs, labels) in enumerate(train_dataloader, 1):
             optimizer.zero_grad()
             inputs, labels = inputs.to(device), labels.to(device)
-            outputs = net(inputs) ### here's where it's hanging up 
+            outputs = net(inputs) ### here's where it's hanging up
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
